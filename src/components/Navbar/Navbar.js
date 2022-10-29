@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../Assets/logo.jpg";
 import "./navbar.css";
 import {
   FaFacebookSquare,
@@ -16,59 +17,48 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2>
-            <span>T</span>hapa
-            <span>T</span>echnical
-          </h2>
+          <img src={logo} alt="logo" />
         </div>
-
         {/* 2nd menu part  */}
         <div
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
+          }
+        >
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/"> Home </NavLink>
             </li>
             <li>
-              <NavLink to="/about">about</NavLink>
+              <NavLink to="/about"> about </NavLink>
             </li>
             <li>
-              <NavLink to="/service">services</NavLink>
+              <NavLink to="/service"> services </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">contact</NavLink>
+              <NavLink to="/contact"> contact </NavLink>
             </li>
           </ul>
         </div>
-
         {/* 3rd social media links */}
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
-              <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
+              <a href="" target="">
                 <FaFacebookSquare className="facebook" />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/thapatechnical/"
-                target="_thapa">
+              <a href="" target="">
                 <FaInstagramSquare className="instagram" />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
+              <a href="" target="">
                 <FaYoutubeSquare className="youtube" />
               </a>
             </li>
           </ul>
-
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
@@ -77,12 +67,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* hero section  */}
-      {/* <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
-      </section> */}
     </>
   );
 };

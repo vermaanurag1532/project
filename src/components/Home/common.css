@@ -1,0 +1,37 @@
+.header,
+.footer {
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(236, 228, 228);
+}
+
+.footer {
+    margin-bottom: 60px;
+}
+
+.header h1,
+.footer h1 {
+    font-size: 50px;
+}
+
+.header h1:hover,
+.footer h1:hover {
+    color: white;
+}
+
+@media ( max-width:999px) {
+    .header,
+    .footer {
+        margin-top: 40px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: rgb(236, 228, 228);
+    }
+    .header h1,
+    .footer h1 {
+        font-size: 30px;
+    }
+}

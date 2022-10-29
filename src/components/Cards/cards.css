@@ -1,0 +1,24 @@
+.cards {
+    margin: 60px 60px;
+    margin-top: 40px;
+    background-color: black;
+    border-radius: 14px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.card {
+    margin: 8px 8px;
+    padding: 14px;
+    background-color: rgb(22, 21, 21);
+    border-radius: 14px;
+}
+
+.body {
+    color: white;
+    font-size: medium;
+}
+
+.card:hover {
+    border: solid rgb(22, 57, 170) 5px;
+}
